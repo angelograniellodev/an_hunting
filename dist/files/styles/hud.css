@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hud-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+.health-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.health-bar i {
+    color: #ff4d4d; 
+    font-size: 18px;
+}
+
+.bar {
+    width: 150px;
+    height: 10px;
+    background: #4d4d4d; 
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar-fill {
+    width: 70%; 
+    height: 100%;
+    background: #ff4d4d; 
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.player-id {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.player-id i {
+    color: white;
+    font-size: 18px;
+}
+
+.player-id span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.server-logo {
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    z-index: 1000;
+}
+
+.server-logo img {
+    width: 100px;
+    height: auto; 
+}

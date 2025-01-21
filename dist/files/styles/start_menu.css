@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+
+.container-start-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 900;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.menu-item {
+    color: #aaa;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #fff;
+}
+
+
+.menu-item.active {
+    background-color: #ff4d4d;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.menu-title {
+    color: #ff4d4d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.sub-title {
+    font-size: 12px;
+    display: block;
+    color: #ddd;
+}
+
+.menu-user {
+    margin-left: auto;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.currency {
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* .play-button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play-button {
+    background: #ff4d4d;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background: #ff4d4d;
+} */
+
+.container-start-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu-item {
+    color: #aaa;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #fff;
+}
+
+.menu-item.active {
+    background-color: #ff4d4d;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-title {
+    color: #ff4d4d;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.sub-title {
+    font-size: 12px;
+    display: block;
+    color: #ddd;
+}
+
+.action-container {
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#option-text {
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.arrow-button {
+    background: #1a1a1a;
+    color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.arrow-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.execute-button {
+    background: #ff4d4d;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.execute-button:hover {
+    background: #b43232;
+}
+
+.profile-container {
+    position: absolute;
+    right: 60px;
+    top: 500%;
+    transform: translateY(-50%);
+    background: #0a0a0a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.player-info {
+    background: #ff4d4d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    font-size: 18px;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.player-rank {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.player-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.stat {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.stat span {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+
+.welcome-message {
+    background: #383838;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}

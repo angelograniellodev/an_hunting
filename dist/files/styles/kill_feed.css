@@ -1,0 +1,68 @@
+.kill-feed-container {
+    position: fixed; 
+    top: 120px; 
+    right: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400x;
+    color: white;
+    transform: scale(1.1);
+    margin: 20px;
+}
+
+.kill-feed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0000009a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    animation: fadeIn 0.5s ease-in-out, fadeOut 5s ease-in-out 4s;
+}
+
+.kill-feed.green {
+    color: #00ff00;
+}
+
+.kill-feed.red {
+    color: #ff0000;
+}
+
+.kill-feed .weapon {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    width: 100px; 
+}
+
+.weapon i {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
